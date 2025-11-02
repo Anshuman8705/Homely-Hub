@@ -24,13 +24,7 @@ Users can:
 - Frontend → **Vercel**  
 - Backend → **Render**
 
----
-
-## 🌐 Deployment Links
-
-- **Frontend (Vercel):** [https://your-frontend-url.vercel.app](https://ynvnk-homelyhub.vercel.app/)  
-- **Backend (Render):** [https://your-backend-url.onrender.com](https://homelyhub-lhx9.onrender.com)
-- **Portfolio:** [https://yadam.vercel.app/](https://yadam.vercel.app/)
+--
 
 ---
 
@@ -87,6 +81,6 @@ npm run dev
 
 ### 👩‍💻 Author
 
-Yadam Naga Venkata Naveen Kumar
+Anshuman Rupesh Agrawal 
 Frontend deployed on Vercel | Backend deployed on Render
 
