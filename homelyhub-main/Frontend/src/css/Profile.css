@@ -1,0 +1,263 @@
+/* Profile Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+
+/* Left Section - Avatar */
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avatar-profile {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #0e8b53;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+/* Right Section - User Info */
+.profile-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.userinfo {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-item p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Profile Buttons */
+.profile-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-btn {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #0e8b53;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0a6d42;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(14, 139, 83, 0.3);
+}
+
+.password-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.password-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Edit Profile Page */
+.updateprofile {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.updateprofile h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #0e8b53;
+  box-shadow: 0 0 0 3px rgba(14, 139, 83, 0.1);
+}
+
+/* Avatar Upload Section */
+.avatar {
+  margin-right: 2rem;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #0e8b53;
+  border-radius: 50%;
+}
+
+.custom-file {
+  flex: 1;
+}
+
+.custom-file-input {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.custom-file-label:hover {
+  background: #e0e0e0;
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #0e8b53;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.update-btn:hover:not(:disabled) {
+  background-color: #0a6d42;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(14, 139, 83, 0.3);
+}
+
+.update-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .profile-right {
+    width: 100%;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+  }
+
+  .profile-btn {
+    width: 100%;
+  }
+
+  .avatar-profile {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Wrapper for Login/Signup pages */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
